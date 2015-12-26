@@ -16,6 +16,10 @@ Buggered if I can find a way to commit an auto generated client script library t
 TeamCity.GitHub
 ===============
 Integration of TeamCity and GitHub. Supports TeamCity 7.1 and newer
+(https://confluence.jetbrains.com/display/TCD9/Build+Script+Interaction+with+TeamCity)
+
+
+<img align="right" height="300" src="https://confluence.jetbrains.com/download/attachments/54334539/TeamCity48.png?version=1&modificationDate=1450097890320&api=v2">
 
 About the Plugin
 ================
