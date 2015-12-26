@@ -29,6 +29,19 @@ The plugin is described in more detail in the following blog posts:
 - http://blog.jonnyzzz.name/2012/09/reporting-change-status-to-github.html
 - http://blog.jonnyzzz.name/2012/09/github-status-api-in-teamcity-update.html
 - http://blog.jonnyzzz.name/2013/04/github-change-status-on-branches.html
+ 
+# Bower - A package manager for the web
+
+> Bower needs resources for its maintenance. Please fill [this form](https://docs.google.com/forms/d/1i-Opb-uPdqUBBZQSbngv3Y3bfolG1gbBvtRLfxMnzRE/viewform?c=0&w=1) if you think you can help.
+
+[![Build Status](https://travis-ci.org/bower/bower.svg?branch=master)](https://travis-ci.org/bower/bower)
+[![Windows Build](https://ci.appveyor.com/api/projects/status/jr6vfra8w84plh2g/branch/master?svg=true)](https://ci.appveyor.com/project/sheerun/bower/history)
+[![Coverage Status](https://img.shields.io/coveralls/bower/bower.svg)](https://coveralls.io/r/bower/bower?branch=master)
+[![Discord chat](https://img.shields.io/badge/discord-join%20chat%20%E2%86%92-brightgreen.svg?style=flat)](https://discord.gg/0fFM7QF0KpZRh2cY)
+[![Issue Stats](http://issuestats.com/github/bower/bower/badge/pr?style=flat)](http://issuestats.com/github/bower/bower)
+[![Issue Stats](http://issuestats.com/github/bower/bower/badge/issue?style=flat)](http://issuestats.com/github/bower/bower)
+
+<img align="right" height="300" src="http://bower.io/img/bower-logo.png">
 
 
 Installation and Configuration
