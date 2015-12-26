@@ -213,6 +213,112 @@ Note that on Windows for tests to pass you need to configure Git before cloning:
 
 ```
 git config --global core.autocrlf input
+
+<div class="article js-hide-during-search">
+
+        <h2>Importing a Git repository using the command line</h2>
+
+        <div id="article-platform-nav">
+  <ul>
+    <li class="platform-mac">
+      <a href="#platform-mac" data-platform="mac">
+        mac
+      </a>
+    </li>
+    <li class="platform-windows">
+      <a href="#platform-windows" data-platform="windows">
+        windows
+      </a>
+    </li>
+    <li class="platform-linux">
+      <a href="#platform-linux" data-platform="linux">
+        linux
+      </a>
+    </li>
+    <li class="platform-all">
+      <a href="#platform-all" data-platform="all">
+        all
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+        <div class="article-body content-body wikistyle markdown-format">
+          <div class="intro">
+
+          
+
+          </div>
+
+          <div class="intro">
+
+<p>If <a href="/articles/importing-from-other-version-control-systems-to-github">GitHub's import tool</a> is not suitable for your purposes, such as if your existing code is hosted on a private network, then we recommend importing using the command line.</p>
+
+</div>
+
+<p>Before you start, make sure you know:</p>
+
+<ul>
+<li>Your GitHub user name.</li>
+<li>The clone URL for the external repository, such as <code>https://otherhost.com/user/repo.git</code> or <code>git://otherhost.org/user/repo.git</code> (perhaps with a <code>user@</code> in front of the <code>otherhost.org</code> domain name).</li>
+</ul>
+
+<div class="alert tip">
+
+<p>For purposes of demonstration, we'll use:</p>
+
+<ul>
+<li>An external account named <strong>extuser</strong>
+</li>
+<li>A GitHub personal user account named <strong>ghuser</strong>
+</li>
+<li>A GitHub repository named <strong>repo.git</strong>
+</li>
+</ul>
+
+</div>
+
+<ol>
+<li>
+<a href="/articles/creating-a-new-repository">Create a new repository on GitHub</a>. You'll import your external Git repository to this new repository.</li>
+<li>
+<p>On the command line, make a "bare" clone of the repository using the external clone URL. This creates a full copy of the data, but without a working directory for editing files, and ensures a clean, fresh export of all the old data.</p>
+
+<pre class="command-line"><span class="command">git clone --bare https://githost.org/<em>extuser</em>/<em>repo.git</em></span>
+<span class="comment"># Makes a bare clone of the external repository in a local directory</span>
+</pre>
+</li>
+<li>
+<p>Push the locally cloned repository to GitHub using the "mirror" option, which ensures that all references, such as branches and tags, are copied to the imported repository.</p>
+
+<pre class="command-line"><span class="command">cd *repo.git*</span>
+<span class="command">git push --mirror https://github.com/<em>ghuser</em>/<em>repo.git</em></span>
+<span class="comment"># Pushes the mirror to the new GitHub repository</span>
+</pre>
+</li>
+<li>
+<p>Remove the temporary local repository.</p>
+
+<pre class="command-line"><span class="command">cd ..</span>
+<span class="command">rm -rf <em>repo.git</em></span>
+</pre>
+</li>
+</ol>
+        </div>
+
+        <div class="support-footer">
+          <ul class="article-footer button-nav">
+            
+              <li><a href="https://github.com/contact" class="minibutton">
+                  <span class="octicon octicon-comment-discussion"></span>
+                  Contact a human
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
 ```
 
 ## License
