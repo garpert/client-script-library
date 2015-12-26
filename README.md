@@ -1,23 +1,11 @@
 # Client-Script-Library
 Buggered if I can find a way to commit an auto generated client script library to github, so that I can generate a bower package during the service build, inside teamcity.... First world IT problems
-# Bower - A package manager for the web
 
-> Bower needs resources for its maintenance. Please fill [this form](https://docs.google.com/forms/d/1i-Opb-uPdqUBBZQSbngv3Y3bfolG1gbBvtRLfxMnzRE/viewform?c=0&w=1) if you think you can help.
-
-[![Build Status](https://travis-ci.org/bower/bower.svg?branch=master)](https://travis-ci.org/bower/bower)
-[![Windows Build](https://ci.appveyor.com/api/projects/status/jr6vfra8w84plh2g/branch/master?svg=true)](https://ci.appveyor.com/project/sheerun/bower/history)
-[![Coverage Status](https://img.shields.io/coveralls/bower/bower.svg)](https://coveralls.io/r/bower/bower?branch=master)
-[![Discord chat](https://img.shields.io/badge/discord-join%20chat%20%E2%86%92-brightgreen.svg?style=flat)](https://discord.gg/0fFM7QF0KpZRh2cY)
-[![Issue Stats](http://issuestats.com/github/bower/bower/badge/pr?style=flat)](http://issuestats.com/github/bower/bower)
-[![Issue Stats](http://issuestats.com/github/bower/bower/badge/issue?style=flat)](http://issuestats.com/github/bower/bower)
-
-<img align="right" height="300" src="http://bower.io/img/bower-logo.png">
 
 TeamCity.GitHub
 ===============
 Integration of TeamCity and GitHub. Supports TeamCity 7.1 and newer
 (https://confluence.jetbrains.com/display/TCD9/Build+Script+Interaction+with+TeamCity)
-
 
 <img align="right" height="48" src="https://confluence.jetbrains.com/download/attachments/54334539/TeamCity48.png?version=1&modificationDate=1450097890320&api=v2">
 
