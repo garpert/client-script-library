@@ -1,6 +1,43 @@
 # client-script-library
 Buggered if I can find a way to commit an auto generated client script library to github, so that I can generate a bower package during the service build, inside teamcity.... First world IT problems
-<audio controls>
+TeamCity.GitHub
+===============
+Integration of TeamCity and GitHub. Supports TeamCity 7.1 and newer
+
+About the Plugin
+================
+The purpose of creating this plugin is to support integration with the [GitHub Change Status API](https://github.com/blog/1227-commit-status-api) in TeamCity, which allows TeamCity to automatically attach build statuses to GitHub pull requests.
+
+The plugin is described in more detail in the following blog posts:
+- http://blog.jonnyzzz.name/2012/09/reporting-change-status-to-github.html
+- http://blog.jonnyzzz.name/2012/09/github-status-api-in-teamcity-update.html
+- http://blog.jonnyzzz.name/2013/04/github-change-status-on-branches.html
+
+
+Installation and Configuration
+==============================
+First, download the [latest build of the plugin](http://teamcity.jetbrains.com/guestAuth/repository/download/bt398/lastest.lastSuccessful/teamcity.github.zip), which is configured for continuous integration on TeamCity [here](http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt398&tab=buildTypeStatusDiv).
+
+**NOTE** Ensure that your download of the `.zip` file is valid - you may be redirected to the login page when using `curl` or `wget`.
+
+Next, put the downloaded `.zip` file into the `<TeamCity Data Directory>/plugins` folder and restart the TeamCity server. You can also upload the .zip directly by clicking "Upload plugin zip" in the Plugins List section of the Administration settings in TeamCity's web interface.
+
+After restarting the server, the plugin should show up as an external plugin in the Plugins List section of the Administration settings.
+
+To use the plugin with one of your TeamCity projects, ensure that your VCS root branch specification includes pull requests:
+
+`+:refs/pull/(*/head)` (build number will include `/head`)
+
+or 
+
+`+:refs/pull/(*)/head` (build number will not include `/head`)
+
+**Note:** It is also possible to use `+:refs/pull/(*/merge)`, but not recommended. There is some risk that this spec will cause a feedback loop of builds that will bog down your TeamCity server. [See this bug report](http://youtrack.jetbrains.com/issue/TW-33455) for more information.
+
+Finally, add a new Build Feature to your project's configuration. Choose "Report change status to GitHub" from the list, fill in the necessary info in the dialog, and you should be good to go!
+
+Branches
+========<audio controls>
   <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type='audio/mp4' />
   <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type='audio/ogg; codecs=vorbis' />
   <p>Your user agent does not support the HTML5 Audio element.</p>
