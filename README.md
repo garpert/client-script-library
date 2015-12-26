@@ -97,8 +97,10 @@ We welcome [contributions](https://github.com/bower/bower/graphs/contributors) o
 * [Feature requests](CONTRIBUTING.md#features)
 * [Pull requests](CONTRIBUTING.md#pull-requests)
 
+## NOTE
 
 Note that on Windows for tests to pass you need to configure Git before cloning:
+
 
 ```
 git config --global core.autocrlf input
