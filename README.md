@@ -55,7 +55,8 @@ or
 Finally, add a new Build Feature to your project's configuration. Choose "Report change status to GitHub" from the list, fill in the necessary info in the dialog, and you should be good to go!
 
 Branches
-========<audio controls>
+========
+<audio controls>
   <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type='audio/mp4' />
   <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type='audio/ogg; codecs=vorbis' />
   <p>Your user agent does not support the HTML5 Audio element.</p>
@@ -75,17 +76,16 @@ password, you should add the following environment variable: `GIT_SSH -
 C:\Program Files\TortoiseGit\bin\TortoisePlink.exe`. Adjust the `TortoisePlink`
 path if needed.
 
-### Ubuntu users
+Ubuntu users
 
-To use Bower on Ubuntu, you might need to link `nodejs` executable to `node`:
-
+### To use Bower on Ubuntu, 
+you might need to link `nodejs` executable to `node`:
 ```
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
+## Bower Configuration
 
-## Configuration
-
-Bower can be configured using JSON in a `.bowerrc` file. Read over available options at [bower.io/docs/config](http://bower.io/docs/config).
+ can be configured using JSON in a `.bowerrc` file. Read over available options at [bower.io/docs/config](http://bower.io/docs/config).
 
 
 ## Support
