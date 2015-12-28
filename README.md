@@ -41,6 +41,17 @@ First, download the [latest build of the plugin](http://teamcity.jetbrains.com/g
 Next, put the downloaded `.zip` file into the `<TeamCity Data Directory>/plugins` folder and restart the TeamCity server. You can also upload the .zip directly by clicking "Upload plugin zip" in the Plugins List section of the Administration settings in TeamCity's web interface.
 
 After restarting the server, the plugin should show up as an external plugin in the Plugins List section of the Administration settings.
+<ul>
+<li><a href="http://prinzhorn.github.io/skrollr/">The "main" example</a></li>
+<li><a href="http://prinzhorn.github.io/skrollr/examples/classic.html">"Classic" parallax with different sections and parallax images between the gaps</a></li>
+<li><a href="http://prinzhorn.github.io/skrollr/examples/anchors.html">Demonstrating different anchors</a></li>
+<li><a href="http://prinzhorn.github.io/skrollr/examples/anchor_target.html">Demonstrating data-anchor-target</a></li>
+<li><a href="http://prinzhorn.github.io/skrollr/examples/pausing.html">Pausing the scrolling for a moment to do other animations</a></li>
+<li><a href="http://prinzhorn.github.io/skrollr/examples/path.html">Drawing a SVG path</a></li>
+<li><a href="http://prinzhorn.github.io/skrollr/examples/circular_motion.html">Using two custom easing functions to create a circular motion</a></li>
+<li><a href="http://prinzhorn.github.io/skrollr/examples/bg_constant_speed_less.html">Parallax background with constant speed</a></li>
+<li><a href="http://prinzhorn.github.io/skrollr/examples/gradientsmotherfucker.html">gradientsmotherfucker</a></li>
+</ul>
 
 To use the plugin with one of your TeamCity projects, ensure that your VCS root branch specification includes pull requests:
 
