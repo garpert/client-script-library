@@ -17,8 +17,8 @@ The plugin is described in more detail in the following blog posts:
 - http://blog.jonnyzzz.name/2012/09/github-status-api-in-teamcity-update.html
 - http://blog.jonnyzzz.name/2013/04/github-change-status-on-branches.html
  
-# Bower - A package manager for the web
-=======================================
+Bower - A package manager for the web
+=====================================
 
 Bower needs resources for its maintenance. Please fill [this form](https://docs.google.com/forms/d/1i-Opb-uPdqUBBZQSbngv3Y3bfolG1gbBvtRLfxMnzRE/viewform?c=0&w=1) if you think you can help.
 
