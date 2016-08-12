@@ -1,13 +1,13 @@
-# Client-Script-Library
-Buggered if I can find a way to commit an auto generated client script library to github, so that I can generate a bower package during the service build, inside teamcity.... First world IT problems
+
 
 <img align="right" height="48" src="https://confluence.jetbrains.com/download/attachments/54334539/TeamCity48.png?version=1&modificationDate=1450097890320&api=v2">
 
-TeamCity.GitHub
+# TeamCity.GitHub
 ===============
 Integration of TeamCity and GitHub. Supports TeamCity 7.1 and newer [Build Script Interaction with TeamCity](https://confluence.jetbrains.com/display/TCD9/Build+Script+Interaction+with+TeamCity)
 
-
+# Client-Script-Library
+Buggered if I can find a way to commit an auto generated client script library to github, so that I can generate a bower package during the service build, inside teamcity.... First world IT problems
 
 About the Plugin
 ================
